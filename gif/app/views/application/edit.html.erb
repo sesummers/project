@@ -1,0 +1,10 @@
+<h2>Edit Gif</h2>
+
+<form action="/update_gif/<%= @fig.id %>">
+  <input type="text" name="url" placeholder = 'url' value='<%= @fig.url %>'>
+  <input type="text" name="caption" placeholder = "caption" value="<%= @fig.caption %>
+  <input type="submit">
+  <img src = "<%= @fig.url %>"
+
+  
+</form>

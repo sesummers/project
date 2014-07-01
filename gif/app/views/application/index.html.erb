@@ -1,0 +1,14 @@
+<ul>
+<% @gifs.each do |fig| %>
+  <div class="stripe">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+          <a href="/gif/<%= fig.id %>"> <img src="<%= fig.url  %>">
+        </div>
+      </div>
+    </div>
+   </div>
+
+<% end %>
+</ul>

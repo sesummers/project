@@ -1,8 +1,10 @@
-  <div class="stripe">
+<h1><%= @id%></h1>
+
+ <div class="stripe">
     <div class="container">
       <div class="row">
         <div class="col-md-4 col-md-offset-4">
-          <img src=  <%= @url  %> alt="">
+          <img src="<%= @fig.url  %>" alt="">
         </div>
       </div>
     </div>
@@ -16,4 +18,30 @@
          <div class="caption"><%= @caption %></div>
        </div>
      </div>
-    </div> 
+    </div>
+
+<center><a href="/gif/<%= @fig.id %>/edit">edit</a></center>
+          <center><a href="/gif/<%= @fig.id %>/destroy">delete</a></center>
+
+
+<!-- <div class="container">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title">Your Gif</h3>
+        </div>
+        <div class="panel-body">
+          <div>
+            <h4><img src = "<%= @fig.url %>"></h4>
+            <center><strong>caption:</strong></center> <center><%= @fig.caption %></center>
+          </div>
+          <center><a href="/create_gif/<%= @fig.id %>/edit">edit</a></center>
+          <center><a href="/gif/<%= @fig.id %>/destroy">delete</a></center>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+ -->
